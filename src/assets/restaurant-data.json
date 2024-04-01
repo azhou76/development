@@ -1,0 +1,98 @@
+[
+  {
+    "name": "Restaurant 1",
+    "description": "Restaurant 1",
+    "distance": 0.85,
+    "price": 7.99,
+    "food": ["vegan", "vegetarian"],
+    "image": "food1.png"
+  },
+  {
+    "name": "Restaurant 2",
+    "description": "Restaurant 1",
+    "distance": 0.85,
+    "price": 7.99,
+    "food": ["vegan", "vegetarian"],
+    "image": "food1.png"
+  },
+  {
+    "name": "Restaurant 3",
+    "description": "Restaurant 1",
+    "distance": 2.5,
+    "price": 7.99,
+    "food": ["vegan", "vegetarian"],
+    "image": "food1.png"
+  },
+  {
+    "name": "Restaurant 4",
+    "description": "Restaurant 1",
+    "distance": 8.5,
+    "price": 6.99,
+    "food": ["vegan", "vegetarian"],
+    "image": "food1.png"
+  },
+  {
+    "name": "Restaurant 5",
+    "description": "Restaurant 1",
+    "distance": 85,
+    "price": 5.99,
+    "food": ["vegan", "vegetarian"],
+    "image": "food1.png"
+  },
+  {
+    "name": "Restaurant 6",
+    "description": "Restaurant 1",
+    "distance": 10,
+    "price": 10.99,
+    "food": ["vegan", "vegetarian"],
+    "image": "food1.png"
+  },
+  {
+    "name": "Restaurant 7",
+    "description": "Restaurant 1",
+    "distance": 0.45,
+    "price": 2.99,
+    "food": ["vegan", "vegetarian", "seafood"],
+    "image": "food1.png"
+  },
+  {
+    "name": "Restaurant 8",
+    "description": "Restaurant 1",
+    "distance": 0.85,
+    "price": 7.99,
+    "food": ["vegetarian"],
+    "image": "food1.png"
+  },
+  {
+    "name": "Restaurant 9",
+    "description": "Restaurant 1",
+    "distance": 0.85,
+    "price": 15.99,
+    "food": [],
+    "image": "food1.png"
+  },
+  {
+    "name": "Restaurant 10",
+    "description": "Restaurant 1",
+    "distance": 0.85,
+    "price": 25.99,
+    "food": ["seafood"],
+    "image": "food1.png"
+  },
+  {
+    "name": "Restaurant 11",
+    "description": "Restaurant 1",
+    "distance": 0.85,
+    "price": 3.99,
+    "food": ["vegan", "vegetarian"],
+    "image": "food1.png"
+  },
+  {
+    "name": "Restaurant 12",
+    "description": "Restaurant 1",
+    "distance": 0.85,
+    "price": 9.99,
+    "food": ["vegan", "vegetarian"],
+    "image": "food1.png"
+  }
+]
