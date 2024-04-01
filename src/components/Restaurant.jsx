@@ -1,4 +1,4 @@
-import "./BakeryItem.css";
+import "./Restaurant.css";
 
 export default function Restaurant({
   name,
@@ -9,16 +9,16 @@ export default function Restaurant({
   image,
 }) {
   return (
-    <div>
-      <div>Name: {name}</div>
+    <div class="card">
+      <div>{name}</div>
+      <img src={image} alt="" />
       <div>Description: {description}</div>
-      <div>Distance: {distance}</div>
-      <div>Average Entree Price: {price}</div>
+      <div>Distance: {distance} miles</div>
+      <div>Average Entree Price: ${price}</div>
       <div>Food Options: </div>
       {food.map((item, index) => (
         <div>{item}</div>
       ))}
-      <img src={image} alt="" />
     </div>
   );
 }
