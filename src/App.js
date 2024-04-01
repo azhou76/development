@@ -179,7 +179,7 @@ function App() {
     setPrefilterFavoritedItems(prefilterFavoritedItems);
   }
 
-  // Function for resetting all filters and sorting
+  // Function for resetting all filters and sorting (maintains what's been favorited)
   function resetItems() {
     setDefaultItems(
       prefilterDefaultItems.slice().sort((a, b) => (a.name > b.name ? 1 : -1))
@@ -187,6 +187,7 @@ function App() {
     setFavoritedItems(
       prefilterFavoritedItems.slice().sort((a, b) => (a.name > b.name ? 1 : -1))
     );
+    setFavorited(prefilterFavoritedItems.length);
   }
 
   return (
@@ -211,7 +212,7 @@ function App() {
         Sort by average entree price
       </button>
       <button onClick={() => resetItems()}>Reset filters/sorting</button>
-      <div>
+      <div class="top">
         <h2>Favorited Restaurants</h2>
         <div className="container">
           {favoritedItems.map((item, index) => (
@@ -230,9 +231,11 @@ function App() {
             </div>
           ))}
         </div>
-        <div>Total Number of Favorited Restaurants: {favorited}</div>
+        <div class="counter">
+          Total Number of Favorited Restaurants: {favorited}
+        </div>
       </div>
-      <div>
+      <div class="bottom">
         <h2>Other Restaurants</h2>
         <div className="container">
           {defaultItems.map((item, index) => (

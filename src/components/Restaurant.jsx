@@ -10,15 +10,15 @@ export default function Restaurant({
 }) {
   return (
     <div class="card">
-      <div>{name}</div>
+      <div class="name">{name}</div>
       <img src={image} alt="" />
       <div>Description: {description}</div>
       <div>Distance: {distance} miles</div>
       <div>Average Entree Price: ${price}</div>
       <div>Food Options: </div>
-      {food.map((item, index) => (
-        <div>{item}</div>
-      ))}
+      {food.length > 0
+        ? food.map((item, index) => <div>-{item}</div>)
+        : "-none"}
     </div>
   );
 }

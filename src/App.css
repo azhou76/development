@@ -3,6 +3,11 @@
 .App {
   text-align: center;
 
+  .top {
+    background-color: lightcoral;
+    margin: 20px;
+  }
+
   .container {
     max-width: 100%;
     display: flex;
@@ -10,4 +15,16 @@
     flex-wrap: wrap;
     padding: 30px;
   }
+
+  .counter {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+}
+
+button,
+select {
+  margin: 10px;
+  font-size: 16px;
 }
