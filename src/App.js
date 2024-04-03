@@ -144,7 +144,7 @@ function App() {
   }
 
   // Function for moving restaurants from the other restaurants list to the favorited restaurants list
-  function updateFavoriteCart(price, item) {
+  function updateFavoriteCart(item) {
     setFavorited(favorited + 1); // update count of total # of favorited restaurants
     const removeIndex = defaultItems.indexOf(item);
     defaultItems.splice(removeIndex, 1);
@@ -162,7 +162,7 @@ function App() {
   }
 
   // Function for moving restaurants from the favorited restaurants list to the other restaurants list
-  function updateUnfavoriteCart(price, item) {
+  function updateUnfavoriteCart(item) {
     setFavorited(favorited - 1); // update count of total # of favorited restaurants
     defaultItems.push(item);
     setDefaultItems(defaultItems);
@@ -212,7 +212,7 @@ function App() {
         Sort by average entree price
       </button>
       <button onClick={() => resetItems()}>Reset filters/sorting</button>
-      <div class="top">
+      <div className="top">
         <h2>Favorited Restaurants</h2>
         <div className="container">
           {favoritedItems.map((item, index) => (
@@ -225,17 +225,17 @@ function App() {
                 food={item.food}
                 image={item.image}
               />
-              <button onClick={() => updateUnfavoriteCart(item.price, item)}>
+              <button onClick={() => updateUnfavoriteCart(item)}>
                 Unfavorite
               </button>
             </div>
           ))}
         </div>
-        <div class="counter">
+        <div className="counter">
           Total Number of Favorited Restaurants: {favorited}
         </div>
       </div>
-      <div class="bottom">
+      <div className="bottom">
         <h2>Other Restaurants</h2>
         <div className="container">
           {defaultItems.map((item, index) => (
@@ -248,9 +248,7 @@ function App() {
                 food={item.food}
                 image={item.image}
               />
-              <button onClick={() => updateFavoriteCart(item.price, item)}>
-                Favorite
-              </button>
+              <button onClick={() => updateFavoriteCart(item)}>Favorite</button>
             </div>
           ))}
         </div>
