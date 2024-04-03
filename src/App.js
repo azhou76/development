@@ -192,9 +192,11 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Restaurants around Brown</h1>{" "}
+      <h1>Restaurants Around Brown</h1>{" "}
       <select value={selectedFoodOption} onChange={handleFoodOptionChange}>
-        <option value="">Filter by food options</option>
+        <option value="" disabled={selectedFoodOption !== ""}>
+          Filter by Food Options
+        </option>
         <option value="vegetarian">Vegetarian Options</option>
         <option value="vegan">Vegan Options</option>
         <option value="seafood">Seafood Options</option>
@@ -203,15 +205,19 @@ function App() {
         value={selectedDistanceOption}
         onChange={handleDistanceOptionChange}
       >
-        <option value="">Filter by distance</option>
+        <option value="" disabled={selectedDistanceOption !== ""}>
+          Filter by Distance
+        </option>
         <option value="walk">Walkable</option>
         <option value="bike">Bikeable</option>
         <option value="drive">Driveable</option>
       </select>
-      <button onClick={() => sortByPrice()}>
-        Sort by average entree price
+      <button className="sort" onClick={() => sortByPrice()}>
+        Sort by Average Entree Price
       </button>
-      <button onClick={() => resetItems()}>Reset filters/sorting</button>
+      <button className="reset" onClick={() => resetItems()}>
+        Reset Filters/Sorting
+      </button>
       <div className="top">
         <h2>Favorited Restaurants</h2>
         <div className="container">
