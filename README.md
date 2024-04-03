@@ -1,6 +1,6 @@
 # development
 
-Link to Vercel Deployment:
+Link to Vercel Deployment: development-pink.vercel.app
 
 This project was created as part of the CSCI 1300 Development project. This website specifically allows users to look at some regional restaurants around Brown University's campus and filter, sort, and favorite them in search of their next spot to eat.
 
